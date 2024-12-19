@@ -35,9 +35,15 @@ header, nav, footer {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Add padding so content isn't hidden behind the fixed header */
+body {
+    padding-top: 80px;
 }
 
 .logo-container {
@@ -94,7 +100,6 @@ p {
 .hero {
     position: relative;
     text-align: center;
-    color: #fff;
     margin-bottom: var(--spacing);
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -104,8 +109,6 @@ p {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    vertical-align: middle;
-    display: block;
     filter: brightness(0.7);
 }
 
@@ -115,15 +118,16 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    max-width: 90%;
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 0 10px;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
 }
 
