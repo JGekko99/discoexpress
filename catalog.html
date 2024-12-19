@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sfoglia la nostra selezione curata di dischi in vinile." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogo - Vinyl Haven</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Logo Vinyl Haven" class="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Chi Siamo</a></li>
+                <li><a href="catalog.html" aria-current="page">Catalogo</a></li>
+                <li><a href="events.html">Eventi</a></li>
+                <li><a href="contact.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-label="Filtri del catalogo">
+            <h1>Il Nostro Catalogo</h1>
+            <p>Seleziona una categoria per esplorare i nostri dischi in vinile:</p>
+            <ul class="catalog-filters">
+                <li><button class="filter-btn" data-category="all">Tutti</button></li>
+                <li><button class="filter-btn" data-category="classic">Classico</button></li>
+                <li><button class="filter-btn" data-category="rock">Rock</button></li>
+                <li><button class="filter-btn" data-category="jazz">Jazz</button></li>
+                <li><button class="filter-btn" data-category="indie">Indie</button></li>
+            </ul>
+        </section>
+        <section aria-label="Dischi in catalogo" class="catalog-section">
+            <div class="records-grid" id="catalog-grid">
+                <!-- Dischi caricati dinamicamente da recommendations.js -->
+            </div>
+        </section>
+        <section aria-label="Raccomandazioni personalizzate" class="recommendations-section">
+            <h2>Consigliati Per Te</h2>
+            <div class="records-grid" id="recommendations-grid">
+                <!-- Raccomandazioni personalizzate -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Vinyl Haven - Tutti i diritti riservati.</p>
+    </footer>
+    <script src="js/recommendations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

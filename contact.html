@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mettiti in contatto con Vinyl Haven." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatti - Vinyl Haven</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Logo Vinyl Haven" class="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Chi Siamo</a></li>
+                <li><a href="catalog.html">Catalogo</a></li>
+                <li><a href="events.html">Eventi</a></li>
+                <li><a href="contact.html" aria-current="page">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-label="Modulo di Contatto">
+            <h1>Contattaci</h1>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" aria-label="Il tuo nome" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" aria-label="La tua email" required />
+
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message" aria-label="Il tuo messaggio" required></textarea>
+
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+        <section aria-label="Posizione e Social Media">
+            <h2>Trovarci</h2>
+            <p>123 Via della Musica, Cittàville</p>
+            <!-- Sostituire con il vostro codice embed della mappa -->
+            <div class="map-placeholder" aria-label="Mappa della posizione">La mappa comparirà qui</div>
+            <h2>Seguici</h2>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Vinyl Haven - Tutti i diritti riservati.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

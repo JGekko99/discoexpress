@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+}
+
+header, nav, footer {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.featured, .news, .about-section, .catalog-section, .recommendations-section, .event-card, .contact-form, .social-links {
+    margin: 20px;
+}
+
+.records-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.record-card, .event-card {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.owner-img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.contact-form label {
+    display: block;
+    margin: 5px 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#chatbot-toggle {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#chatbot {
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+#chatbot.hidden {
+    display: none;
+}
+
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#chatbot-form {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+#chatbot-input {
+    flex: 1;
+    padding: 10px;
+}
+
+#chatbot-form button {
+    background: #222;
+    color: #fff;
+    border: none;
+    width: 70px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .records-grid {
+        grid-template-columns: 1fr;
+    }
+}

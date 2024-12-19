@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Un negozio di dischi in vinile che offre una selezione unica di titoli classici e moderni." />
+    <meta name="keywords" content="Vinile, Dischi, Musica, Negozio, Catalogo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinyl Haven - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Analytics (Sostituire con il proprio codice di tracciamento) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+    -->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Logo Vinyl Haven" class="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">Chi Siamo</a></li>
+                <li><a href="catalog.html">Catalogo</a></li>
+                <li><a href="events.html">Eventi</a></li>
+                <li><a href="contact.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" role="banner">
+            <img src="assets/images/banner.jpg" alt="Banner del negozio di dischi in vinile" />
+            <div class="hero-text">
+                <h1>Benvenuti a Vinyl Haven</h1>
+                <p>La tua fonte di dischi in vinile unici e rari</p>
+            </div>
+        </section>
+        <section class="featured" aria-label="Dischi in evidenza">
+            <h2>Dischi in Evidenza</h2>
+            <div class="records-grid">
+                <article class="record-card">
+                    <img src="assets/images/sample-record.jpg" alt="Disco in vinile campione" />
+                    <h3>Album Classico 1</h3>
+                    <p>Un disco intramontabile che risuona ancora oggi.</p>
+                </article>
+                <article class="record-card">
+                    <img src="assets/images/sample-record.jpg" alt="Disco in vinile campione" />
+                    <h3>Hit Indie Moderne</h3>
+                    <p>Suoni freschi di un artista emergente.</p>
+                </article>
+            </div>
+        </section>
+        <section class="news" aria-label="Ultime Novità">
+            <h2>Ultime Novità</h2>
+            <p>Resta sintonizzato per la nostra prossima Serata di Apprezzamento del Vinile!</p>
+        </section>
+    </main>
+    <aside class="chatbot-container" aria-label="Assistenza Chat">
+        <button id="chatbot-toggle" aria-label="Apri Chatbot">Chatta con noi</button>
+        <div id="chatbot" class="hidden" role="dialog" aria-modal="true" aria-label="Chatbot">
+            <div class="chatbot-messages" id="chatbot-messages"></div>
+            <form id="chatbot-form" aria-label="Modulo di messaggio del chatbot">
+                <input type="text" id="chatbot-input" placeholder="Scrivi la tua domanda..." aria-label="Il tuo messaggio" />
+                <button type="submit" aria-label="Invia messaggio">Invia</button>
+            </form>
+        </div>
+    </aside>
+    <footer>
+        <p>&copy; <span id="year"></span> Vinyl Haven - Tutti i diritti riservati.</p>
+        <p><a href="https://github.com/your-username/vinyl-shop" target="_blank" rel="noopener">Repository GitHub</a></p>
+    </footer>
+    <script src="js/chatbot.js"></script>
+    <script src="js/recommendations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
