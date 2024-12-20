@@ -25,7 +25,9 @@ body {
     background: var(--background-color);
     color: var(--text-color);
     line-height: 1.5;
+    padding-top: 100px; /* Increase this if still cut off */
 }
+
 
 header, nav, footer {
     background: var(--header-footer-bg);
@@ -118,12 +120,12 @@ p {
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin: 0 0 10px;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin: 0;
 }
 
