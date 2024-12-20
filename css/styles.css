@@ -25,7 +25,7 @@ body {
     background: var(--background-color);
     color: var(--text-color);
     line-height: 1.5;
-    padding-top: 100px; /* Increase this if still cut off */
+    
 }
 
 
