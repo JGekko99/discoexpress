@@ -25,9 +25,7 @@ body {
     background: var(--background-color);
     color: var(--text-color);
     line-height: 1.5;
-    
 }
-
 
 header, nav, footer {
     background: var(--header-footer-bg);
@@ -36,10 +34,12 @@ header, nav, footer {
     position: relative;
 }
 
+/* Remove fixed positioning from the header to restore original behavior */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* No fixed positioning */
+    position: static;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo-container {
